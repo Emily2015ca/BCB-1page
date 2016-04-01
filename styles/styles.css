@@ -1,0 +1,10 @@
+header{
+	background-color:#737679;
+	border:none;
+	border-bottom:3px solid #ccc;
+	background-image: none;
+	height: 90px;
+	position: fix;
+	top:0;
+	left:0;
+}
