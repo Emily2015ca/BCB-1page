@@ -1,8 +1,15 @@
+
+@font-face{
+	font-family:'Roboto';
+	src:url('../fonts/Roboto-Regular.ttf');
+}
+@font-face{
+	font-family:'Roboto-Light';
+	src:url('../fonts/Roboto-Light.ttf');
+}
 body{
 	font-family:'Roboto';
-	src:url('../fonts/Roboto-Regular.ttf') format ('truetype');
-	font-weight: 100;
-
+	background: #f7f7f7;
 }
 header{
 	background-color:#737679;
@@ -158,6 +165,7 @@ footer{
 	width: 100%;
 	background-color: #2A3646;
 	color: white;
+	font-family: 'Roboto-Light';
 	justify-content: center;
 	flex-wrap: wrap;
 }
@@ -171,7 +179,8 @@ footer nav{
 }
 footer nav h3{
 	font-size: 24px;
-	margin-bottom: 10px;
+	font-weight: bold;
+	margin-bottom: 15px;
 }
 footer nav span{
 	display: block;
@@ -183,12 +192,13 @@ footer nav a{
 	font-size: 15px;
 }
 footer nav a:visited{
-	color: beige;
+	color: white;
 }
 footer nav a:hover{
-	color: AntiqueWhite;
+	color: #69B47F;
 	text-decoration: none;
 }
 footer nav .glyphicon:before{
+	color: #69B47F;
 	margin-right: 6px;
 }
