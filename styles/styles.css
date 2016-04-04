@@ -177,6 +177,8 @@ footer .copyright{
 }
 footer nav{
 	flex-basis: 20%;
+	padding: 2%;
+	margin-bottom: 75px;
 }
 footer nav h3{
 	font-size: 24px;
