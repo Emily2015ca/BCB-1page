@@ -1,0 +1,256 @@
+
+@font-face{
+	font-family:'Amatic SC';
+	src:url('../fonts/amatic/AmaticSC-Regular.ttf');
+}
+@font-face{
+	font-family:'Amatic-Bold';
+	src:url('../fonts/amatic/Amatic-Bold.ttf');
+}
+@font-face{
+	font-family:'Lato';
+	src:url('../fonts/Lato2OFL/Lato-Regular.ttf');
+}
+/* header styles */
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 80%;
+}
+.columns{
+	position: relative;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	flex-basis:80%;
+}
+.main-header{
+	flex-grow:1;
+	text-align: left;
+	padding:0px;
+	margin-top: 25px;
+    margin-left: 80px;
+}
+.main-header h1.title { 
+	font-family:  "Amatic SC" ; 
+	font-size: 3.33333em; 
+	margin: 0; 
+	display: block; 
+	color:  #444444 ; 
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.main-header h1.title a{
+	display: inline-block;
+	color:#444444;
+	bottom: 5px;
+    left: 0;
+    text-decoration: none;
+} 
+
+.menu{
+	margin-top: 10px;
+	margin-right: 80px;
+}
+.menu a{
+	color:#444444;
+}
+.header-nav{
+	flex-grow:1;
+	text-align: left;
+	padding:0px;
+	margin: 30px 0px 30px 60px;
+}
+.header-nav a{
+	border:none;
+	color:#fff;
+	font-size:1em;
+	font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#444444;
+	text-align: center;
+	padding:20px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+.searchbar-container{
+	display: none;
+}
+.search-account{ 
+	flex-grow:1;
+	text-align: right;
+}
+.shopping-cart{
+	flex-grow:1;
+	text-align: right;  
+	margin-top: 10px;
+	margin-right: 80px;      
+}
+.shopping-cart a{
+	color:#444444;
+}
+.section-banner{
+	width:100%;
+	position: relative;
+}
+.banner-text{
+	position: absolute;
+	bottom:40%;
+	left:5%;
+	width:40%;
+	color:rgba(255,255,255,1.0);
+}
+.banner-text .sub-title{
+	line-height: 1.5;
+	margin-bottom:25px;
+}
+.banner-text .banner-button{
+	color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+.banner-text a.banner-button{
+	background-color: transparent;
+}
+.banner-text  a.banner-button:hover{
+	text-decoration: none;
+	background: #1b1b1b;
+}
+.section-banner img{
+	background-size: cover;
+    width: 100%;
+}
+.section-text{
+	height: 250px;
+    text-align: center;
+}
+.section-text h2{
+	padding-top: 60px;
+    font-size: 2em;
+    font-weight: bold;
+    margin:auto;
+}
+.section-text p{
+	padding-top:40px;
+	width: 40%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+.section-pictures{
+	width:100%;
+	margin: auto;
+	text-align: center;
+}
+.image-container{
+   margin-bottom:20px;
+}
+.image-box{
+	box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 33.0%;
+    cursor: pointer;
+    margin-left: -5px;
+}
+.image-box a{
+	display: inline-block;
+	position: relative;
+    cursor: pointer;
+    width:100%;
+}
+.image-box img{
+	display: inline-block;
+    width: 100%;
+}
+/* h1,h2,    */
+h2{
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	font-style: normal;
+}
+h3{
+	font-size: 1.45em;
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+}
+/* footer styles */
+
+footer .main-footer{
+	padding: 0 0 60px 0;
+    background-color:  #fafafa;
+    color: #444444;
+    margin-top: 50px;
+}
+footer{
+	display: flex;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer .copyright{
+	flex-basis: 100%;
+	padding: 0px 0 40px 0px;
+	font-size: 12px;
+}
+footer nav{
+	flex-basis: 32%;
+}
+footer nav:first-child{
+	margin-left: 50px
+}
+footer nav h3{
+	color:rgb(68,68,68);
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	/*margin-left:5px;*/
+}
+footer nav span{
+	display: block;
+	margin: 10px 0px 11px;
+}
+footer nav a{
+	color: rgb(68,68,68);
+	text-decoration: none;
+	font-size: 12px;
+}
+footer nav a:visited{
+	color: rgb(68,68,68);
+}
+footer nav a:hover{
+	color: #69B47F;
+	text-decoration: none;
+}
+
+footer nav input{
+	width:200px;
+}
+footer nav .subsribe{
+	background-color:#444444;
+	color:white;
+	width:46px;
+	height:28px;
+	border:none;
+}
+/* glyphicon styles */
+
+.glyphicon{
+	margin: 0 10px;
+}
+.fa{
+	margin: 12px;
+    color: black;
+    width: 10px;
+    font-size: 25px;
+}
+a.fa:hover{
+	color:black;
+}
