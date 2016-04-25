@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="robots" content="all" />
+
+    <title>BCB-1page template</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    
+	<div class="banner"> 
+   		<div class="banner-title">
+   			<h1>Wine Tasting</h1>
+   		</div>
+
+   		<div class="subcribe-title">
+   			<h2>Enjoy new growth hacking idea delivered to your Email every day.</h2>
+   		</div>
+    	<div class="subcribe-title">
+    		<form>
+    			<div id="error_wrapper">
+	  				<input id="email_address" type="email" name="email" placeholder="your Email">
+	  				<button id="subcribe-button">Subcribe</button>
+	  				<span id="error">Please enter a valid email address.</span>
+  				</div>
+			</form>
+    	</div>
+	</div>		
+    
+
+<script>
+	window.onload=function(){
+
+		document.getElementById('subcribe-button').addEventListener('click', subscribe,false);
+		document.getElementById('email_address').addEventListener('keyup',function(event){
+			if(event.keyCode == 13){
+				if(document.getElementById('email_address').value=""){
+					console.log("email address!");
+				}
+			}
+		},false);
+	}
+	function subscribe(event){
+
+		event.preventDefault();
+		console.log("hello you clicked on me");
+		var email=document.getElementById('email_address');
+
+		if(validateEmail(email)){
+			consosle.log("submit......:)");
+		}else{
+			console.log("email address");
+		}
+		
+	}
+
+	function validateEmail(email) {
+    		var re = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
+    	return re.test(email);
+    }
+
+    function writeError(){
+    	// var error_message="Please enter a valid email address.";
+    	document.getElementById('error-wrapper').addClass="active";
+    	document.getElementById('error').display="block";
+
+    }
+
+    
+</script>
+</body>
+</html>
